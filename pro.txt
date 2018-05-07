@@ -1,0 +1,421 @@
+2017-09-22 18:14:35 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «openpg»
+
+2017-09-22 18:19:18 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «openpg»
+
+2017-09-22 18:19:41 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «openpg»
+
+2017-09-22 18:19:58 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «root»
+
+2017-09-22 18:20:32 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-09-22 18:20:36 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-09-22 18:20:42 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-09-22 18:21:36 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-09-22 18:21:46 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-09-22 18:24:38 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-09-22 18:24:56 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+
+2017-09-22 18:34:12 ERROR  : ERROR:  la base de datos «Odoo» está siendo utilizada por otros usuarios
+DETAIL:  Hay otras 6 sesiones usando la base de datos.
+2017-09-22 18:34:45 ERROR  : ERROR:  la base de datos «Odoo» está siendo utilizada por otros usuarios
+DETAIL:  Hay otras 6 sesiones usando la base de datos.
+2017-09-22 18:37:45 ERROR  : Error connecting to the server: FATAL:  la autentificación password falló para el usuario «postgres»
+
+2017-10-04 16:19:49 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 1: ...','Morcillo Moreno','6/5/97'::date,'H'),1,'04/10/17'::date))
+                                                                      ^
+2017-10-04 17:14:31 ERROR  : ERROR:  error de sintaxis en o cerca de «;»
+LINE 12: ... values('88888888N','Abel','Morcillo','20/6/5'::date,'DAM2';
+                                                                       ^
+2017-10-04 17:14:40 ERROR  : ERROR:  error de sintaxis en o cerca de «;»
+LINE 12: ...tudiant values('88888888N','Abel','Morcillo','20/6/5'::date;
+                                                                       ^
+2017-10-04 17:14:51 ERROR  : ERROR:  la sintaxis de entrada no es válida para integer: «DAM2»
+LINE 12: ...values('88888888N','Abel','Morcillo','20/6/5'::date,'DAM2');
+                                                                ^
+2017-10-06 15:51:11 ERROR  : ERROR:  no existe la columna «id» en la llave
+LINE 10: primary key(id)
+         ^
+2017-10-06 15:53:44 ERROR  : ERROR:  ya existe un tipo «soci»
+2017-10-06 16:03:33 ERROR  : ERROR:  la relación «control_socis» ya existe
+2017-10-11 16:31:44 ERROR  : ERROR:  error de sintaxis en o cerca de «num_soci»
+LINE 3: num_soci int REFERENCES persona
+        ^
+2017-10-11 16:33:12 ERROR  : ERROR:  «persona» es un tipo compuesto
+2017-10-11 16:33:31 ERROR  : ERROR:  «soci» es un tipo compuesto
+2017-10-11 16:33:38 ERROR  : ERROR:  «soci» es un tipo compuesto
+2017-10-11 16:36:10 ERROR  : ERROR:  no hay llave primaria para la tabla referida «socis»
+2017-10-11 16:40:26 ERROR  : ERROR:  inserción o actualización en la tabla «factures» viola la llave foránea «factures_num_soci_fkey»
+DETAIL:  La llave (num_soci)=(5) no está presente en la tabla «socis».
+2017-10-11 16:40:32 ERROR  : ERROR:  error de sintaxis en o cerca de «insert»
+LINE 8: insert into factures values(1,4)
+        ^
+2017-10-11 16:40:42 ERROR  : ERROR:  inserción o actualización en la tabla «factures» viola la llave foránea «factures_num_soci_fkey»
+DETAIL:  La llave (num_soci)=(5) no está presente en la tabla «socis».
+2017-10-11 16:42:02 ERROR  : ERROR:  no existe la columna «soci_id»
+LINE 1: delete from socis where soci_id = '4'
+                                ^
+HINT:  Perhaps you meant to reference the column "socis.soci".
+2017-10-11 16:42:10 ERROR  : ERROR:  update o delete en «socis» viola la llave foránea «factures_num_soci_fkey» en la tabla «factures»
+DETAIL:  La llave (id_soci)=(4) todavía es referida desde la tabla «factures».
+2017-11-15 15:47:08 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+raise notice 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() returns void as $$
+                                                     ^
+2017-11-15 15:47:30 ERROR  : ERROR:  error de sintaxis en o cerca de «as»
+LINE 1: CREATE FUNCTION helloworld() returns as $$
+                                             ^
+2017-11-15 15:47:44 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+raise notice 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() returns void as $$
+                                                     ^
+2017-11-15 15:47:56 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+raise notice 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() returns integer as $$
+                                                        ^
+2017-11-15 15:48:13 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+raise notice 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() RETURNS void AS $$
+                                                     ^
+2017-11-15 15:49:07 ERROR  : ERROR:  error de sintaxis en o cerca de «BEGIN»
+LINE 3: BEGIN
+        ^
+2017-11-15 15:49:59 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+raise notice 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() RETURNS TEXT AS $$
+                                                     ^
+2017-11-15 15:50:15 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+select 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() RETURNS TEXT AS $$
+                                                     ^
+2017-11-15 15:50:52 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+return select 'Hello world!';
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() RETURNS TEXT AS $$
+                                                     ^
+2017-11-15 15:51:07 ERROR  : ERROR:  una cadena separada por $ está inconclusa en o cerca de «$$
+DECLARE
+
+BEGIN
+select "Hello world!";
+END;
+
+helloworld();»
+LINE 1: CREATE FUNCTION helloworld() RETURNS TEXT AS $$
+                                                     ^
+2018-01-10 16:19:41 ERROR  : ERROR:  error de sintaxis en o cerca de «auto_increment»
+LINE 2:  id int auto_increment,
+                ^
+2018-01-10 16:19:57 ERROR  : ERROR:  error de sintaxis en o cerca de «SERIAL»
+LINE 2:  id int SERIAL,
+                ^
+2018-01-10 16:37:32 ERROR  : ERROR:  error de sintaxis en o cerca de «:»
+LINE 5:  Adreca: text,
+               ^
+2018-01-10 16:37:36 ERROR  : ERROR:  la relación «pk» ya existe
+2018-01-24 17:10:17 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.130.29», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-01-24 17:11:05 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.130.29», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-01-24 17:12:33 ERROR  : Error connecting to the server: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2018-01-24 17:13:51 ERROR  : Error connecting to the server: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2018-03-16 15:21:49 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 21:  constraint fk_web foreign key id_empresa references Emprese...
+                                        ^
+2018-03-16 15:22:04 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 21:  constraint fk_web foreign key id_empresa references Emprese...
+                                        ^
+2018-03-16 15:39:48 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 21:  foreign key id_empresa references Empreses(id) on delete no...
+                      ^
+2018-03-19 08:36:49 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 21:     foreign key id_empresa references Empreses(id) on delete...
+                         ^
+2018-03-19 08:37:08 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 21:     foreign key id_empresa references Empreses(id) on delete...
+                         ^
+2018-03-19 08:38:16 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 21:     foreign key id_empresa references Empreses(id) on delete...
+                         ^
+2018-03-19 08:38:37 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 29:     constraint fk_tutor foreign key id_empresa references Em...
+                                             ^
+2018-03-19 08:38:54 ERROR  : ERROR:  error de sintaxis en o cerca de «id_empresa»
+LINE 37:     constraint fk_empresa foreign key id_empresa references ...
+                                               ^
+2018-03-19 08:39:09 ERROR  : ERROR:  error de sintaxis en o cerca de «id_conveni»
+LINE 42:     constraint fk_conveni foreign key id_conveni references ...
+                                               ^
+2018-03-19 08:39:26 ERROR  : ERROR:  no existe la relación «conveni»
+2018-03-19 08:51:01 ERROR  : ERROR:  la sintaxis de entrada no es válida para integer: «41.959043 »
+LINE 1: INSERT INTO public.empreses(id) VALUES ('41.959043 '::intege...
+                                                ^
+2018-03-19 12:37:45 ERROR  : ERROR:  la referencia a la columna «id» es ambigua
+LINE 1: SELECT id,nom,adreca,descripcio,latitud,longitud,data_inici,...
+               ^
+2018-03-19 13:24:48 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 1: ...alumnes a inner join formacio_dual fd on c.id_empresa = e.id
+                                                                       ^
+2018-03-19 13:27:10 ERROR  : ERROR:  error de sintaxis al final de la entrada
+LINE 1: ...al ed on c.id_empresa = e.id on c.id_conveni = ed.id_conveni
+                                                                       ^
+2018-03-19 13:28:19 ERROR  : ERROR:  error de sintaxis en o cerca de «.»
+LINE 1: ...er join estada_dual ed on a.dni = ed.dni_alumne) c.id_empres...
+                                                             ^
+2018-03-19 13:29:16 ERROR  : ERROR:  referencia a la entrada de la cláusula FROM para la tabla «e» no válida
+LINE 1: ...ual ed on a.dni = ed.dni_alumne on c.id_empresa = e.id on c....
+                                                             ^
+HINT:  Hay una entrada para la tabla «e», pero no puede ser referenciada desde esta parte de la consulta.
+2018-03-19 13:32:56 ERROR  : ERROR:  error de sintaxis en o cerca de «ed»
+LINE 1: ...in convenis c on c.id_empresa = e.id) estada_dual ed inner j...
+                                                             ^
+2018-03-19 13:34:37 ERROR  : ERROR:  error de sintaxis en o cerca de «ed»
+LINE 1: ed
+        ^
+2018-03-19 13:34:48 ERROR  : ERROR:  falta una entrada para la tabla «ed» en la cláusula FROM
+LINE 1: ...presa = e.id) estada_dual inner join alumnes a on ed.dni_alu...
+                                                             ^
+2018-03-19 13:34:58 ERROR  : ERROR:  no existe la columna estada_dual.dni_alumne
+LINE 1: ...presa = e.id) estada_dual inner join alumnes a on estada_dua...
+                                                             ^
+2018-03-19 13:35:05 ERROR  : ERROR:  no existe la columna estada_dual.dni_alumne
+LINE 1: ...empresa = e.id) estada_dual inner join alumnes on estada_dua...
+                                                             ^
+2018-03-19 13:35:33 ERROR  : ERROR:  error de sintaxis en o cerca de «)»
+LINE 1: ...ual ed inner join alumnes on estada_dual.dni_alumne = a.dni)
+                                                                      ^
+2018-03-19 13:36:40 ERROR  : ERROR:  referencia a la entrada de la cláusula FROM para la tabla «estada_dual» no válida
+LINE 1: ... ed on c.id = ed.id_conveni inner join alumnes on estada_dua...
+                                                             ^
+HINT:  Probablemente quiera hacer referencia al alias de la tabla «ed».
+2018-03-19 13:37:13 ERROR  : ERROR:  falta una entrada para la tabla «a» en la cláusula FROM
+LINE 1: ... ed.id_conveni) inner join alumnes on ed.dni_alumne = a.dni)
+                                                                 ^
+2018-03-19 13:37:22 ERROR  : ERROR:  falta una entrada para la tabla «a» en la cláusula FROM
+LINE 1: ...d.id_conveni) inner join alumnes s on ed.dni_alumne = a.dni)
+                                                                 ^
+2018-03-19 13:37:28 ERROR  : ERROR:  la referencia a la columna «nom» es ambigua
+LINE 1: SELECT e.id,nom,adreca,descripcio,latitud,longitud,data_inic...
+                    ^
+2018-03-19 14:23:02 ERROR  : ERROR:  no se puede eliminar tabla convenis porque otros objetos dependen de él
+DETAIL:  restricción «estada_dual_id_conveni_fkey» en tabla estada_dual depende de tabla convenis
+HINT:  Use DROP ... CASCADE para eliminar además los objetos dependientes.
+2018-03-19 14:24:00 ERROR  : ERROR:  no se puede eliminar tabla convenis porque otros objetos dependen de él
+DETAIL:  restricción «estada_dual_id_conveni_fkey» en tabla estada_dual depende de tabla convenis
+HINT:  Use DROP ... CASCADE para eliminar además los objetos dependientes.
+2018-03-19 14:24:20 ERROR  : ERROR:  no existe la tabla «estada_dual»
+2018-03-19 14:24:25 ERROR  : ERROR:  no existe la relación «public.convenis»
+2018-03-19 14:24:32 ERROR  : ERROR:  no existe la relación «convenis_id_seq»
+2018-03-19 14:25:15 ERROR  : ERROR:  no existe el esquema «tutors»
+2018-03-19 14:25:21 ERROR  : ERROR:  no existe el esquema «tutor»
+2018-03-19 14:25:32 ERROR  : ERROR:  no existe el esquema «tutors»
+2018-03-19 14:28:03 ERROR  : ERROR:  inserción o actualización en la tabla «convenis» viola la llave foránea «convenis_dni_responsable_fkey»
+DETAIL:  La llave (dni_responsable)=(324) no está presente en la tabla «tutors».
+2018-03-19 14:28:04 ERROR  : ERROR:  inserción o actualización en la tabla «convenis» viola la llave foránea «convenis_dni_responsable_fkey»
+DETAIL:  La llave (dni_responsable)=(324) no está presente en la tabla «tutors».
+2018-03-19 14:30:09 ERROR  : ERROR:  error de sintaxis en o cerca de «WI»
+LINE 12: WI
+         ^
+2018-03-19 14:30:32 ERROR  : ERROR:  no existe la relación «alumne»
+2018-03-19 14:30:48 ERROR  : ERROR:  inserción o actualización en la tabla «estada_dual» viola la llave foránea «estada_dual_dni_alumne_fkey»
+DETAIL:  La llave (dni_alumne)=(3243) no está presente en la tabla «alumnes».
+2018-03-19 14:30:49 ERROR  : ERROR:  inserción o actualización en la tabla «estada_dual» viola la llave foránea «estada_dual_dni_alumne_fkey»
+DETAIL:  La llave (dni_alumne)=(3243) no está presente en la tabla «alumnes».
+2018-03-20 08:03:41 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-03-20 08:18:34 ERROR  : ERROR:  syntax error at or near "’"
+LINE 4:     ‘20/12/88’,
+                     ^
+2018-03-20 08:18:43 ERROR  : ERROR:  column "‘41601234j’" does not exist
+LINE 2:     ‘41601234J’,
+            ^
+2018-03-20 08:19:03 ERROR  : ERROR:  column "41601234J" does not exist
+LINE 2:     "41601234J",
+            ^
+2018-03-20 08:19:21 ERROR  : ERROR:  column "data_naix" is of type date but expression is of type integer
+LINE 4:     20/12/88,
+            ^
+HINT:  You will need to rewrite or cast the expression.
+2018-03-20 08:23:34 ERROR  : ERROR:  invalid input syntax for integer: "ArtPlay"
+LINE 2:     'ArtPlay',
+            ^
+2018-03-20 08:24:16 ERROR  : ERROR:  column "ArtPlay" does not exist
+LINE 2:     "ArtPlay",
+            ^
+2018-03-20 08:24:22 ERROR  : ERROR:  invalid input syntax for integer: "ArtPlay"
+LINE 2:     'ArtPlay',
+            ^
+2018-03-20 08:29:35 ERROR  : ERROR:  duplicate key value violates unique constraint "web_empresa_pkey"
+DETAIL:  Key (id_empresa)=(1) already exists.
+2018-03-20 08:29:38 ERROR  : ERROR:  duplicate key value violates unique constraint "web_empresa_pkey"
+DETAIL:  Key (id_empresa)=(1) already exists.
+2018-03-20 08:30:18 ERROR  : ERROR:  multiple primary keys for table "web_empresa" are not allowed
+LINE 5:     CONSTRAINT web_empresa_pkey PRIMARY KEY (id_empresa,web)
+            ^
+2018-03-20 08:45:02 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO public.web_empresa() VALUES ('1'::'www.labisbal....
+                                       ^
+2018-03-20 08:45:12 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO public.web_empresa() VALUES ('1'::'www.labisbal....
+                                       ^
+2018-03-20 08:45:15 ERROR  : ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO public.web_empresa() VALUES ('1'::'www.labisbal....
+                                       ^
+2018-03-20 08:45:48 ERROR  : ERROR:  relation "web_empresa" already exists
+2018-03-20 08:48:29 ERROR  : ERROR:  insert or update on table "estada_dual" violates foreign key constraint "estada_dual_id_conveni_fkey"
+DETAIL:  Key (id_conveni)=(6) is not present in table "convenis".
+2018-03-20 08:48:35 ERROR  : ERROR:  insert or update on table "estada_dual" violates foreign key constraint "estada_dual_id_conveni_fkey"
+DETAIL:  Key (id_conveni)=(6) is not present in table "convenis".
+2018-03-20 08:51:14 ERROR  : ERROR:  duplicate key value violates unique constraint "convenis_pkey"
+DETAIL:  Key (id)=(6) already exists.
+2018-03-20 09:50:21 ERROR  : ERROR:  operator does not exist: text = integer
+LINE 6:  where e.nom = 1
+                     ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2018-03-23 14:58:42 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.19.160», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-03-23 15:00:18 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.19.160», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-03-23 15:02:05 ERROR  : Error connecting to the server: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2018-03-23 15:02:14 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.19.160», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-03-23 15:03:06 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.19.160», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-03-23 15:03:49 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.19.160», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-03-23 15:05:56 ERROR  : Error connecting to the server: FATAL:  no hay una línea en pg_hba.conf para «192.168.19.160», usuario «openpg», base de datos «postgres», SSL inactivo
+
+2018-03-27 11:36:41 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2018-03-27 11:39:11 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322211X) is not present in table "tutors".
+2018-03-27 11:39:13 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322211X) is not present in table "tutors".
+2018-03-27 11:39:29 ERROR  : ERROR:  update or delete on table "tutors" violates foreign key constraint "convenis_dni_responsable_fkey" on table "convenis"
+DETAIL:  Key (dni)=(333222111X) is still referenced from table "convenis".
+2018-03-27 11:39:39 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322111X) is not present in table "tutors".
+2018-03-27 11:39:41 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322111X) is not present in table "tutors".
+2018-03-27 11:39:46 ERROR  : ERROR:  update or delete on table "tutors" violates foreign key constraint "convenis_dni_responsable_fkey" on table "convenis"
+DETAIL:  Key (dni)=(333222111X) is still referenced from table "convenis".
+2018-03-27 11:40:30 ERROR  : ERROR:  duplicate key value violates unique constraint "convenis_pkey"
+DETAIL:  Key (id)=(7) already exists.
+2018-03-27 11:40:35 ERROR  : ERROR:  duplicate key value violates unique constraint "convenis_pkey"
+DETAIL:  Key (id)=(7) already exists.
+2018-03-27 11:41:09 ERROR  : ERROR:  update or delete on table "convenis" violates foreign key constraint "estada_dual_id_conveni_fkey" on table "estada_dual"
+DETAIL:  Key (id)=(7) is still referenced from table "estada_dual".
+2018-03-27 11:42:43 ERROR  : ERROR:  insert or update on table "estada_dual" violates foreign key constraint "estada_dual_dni_alumne_fkey"
+DETAIL:  Key (dni_alumne)=(56423461C) is not present in table "alumnes".
+2018-03-27 11:42:57 ERROR  : ERROR:  update or delete on table "alumnes" violates foreign key constraint "estada_dual_dni_alumne_fkey" on table "estada_dual"
+DETAIL:  Key (dni)=(564234671C) is still referenced from table "estada_dual".
+2018-03-27 11:47:38 ERROR  : ERROR:  update or delete on table "convenis" violates foreign key constraint "estada_dual_id_conveni_fkey" on table "estada_dual"
+DETAIL:  Key (id)=(7) is still referenced from table "estada_dual".
+2018-03-27 11:48:20 ERROR  : ERROR:  duplicate key value violates unique constraint "estada_dual_pkey"
+DETAIL:  Key (dni_alumne)=(12345678M) already exists.
+2018-03-27 11:48:23 ERROR  : ERROR:  duplicate key value violates unique constraint "estada_dual_pkey"
+DETAIL:  Key (dni_alumne)=(12345678M) already exists.
+2018-03-27 11:48:57 ERROR  : ERROR:  update or delete on table "tutors" violates foreign key constraint "convenis_dni_responsable_fkey" on table "convenis"
+DETAIL:  Key (dni)=(333222111X) is still referenced from table "convenis".
+2018-03-27 11:49:06 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322111X) is not present in table "tutors".
+2018-03-27 11:49:36 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322211X) is not present in table "tutors".
+2018-03-27 11:49:48 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322211X) is not present in table "tutors".
+2018-03-27 11:49:54 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322111X) is not present in table "tutors".
+2018-03-27 11:49:57 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322111X) is not present in table "tutors".
+2018-03-27 11:50:08 ERROR  : ERROR:  update or delete on table "tutors" violates foreign key constraint "convenis_dni_responsable_fkey" on table "convenis"
+DETAIL:  Key (dni)=(333222111X) is still referenced from table "convenis".
+2018-03-27 11:50:24 ERROR  : ERROR:  duplicate key value violates unique constraint "convenis_pkey"
+DETAIL:  Key (id)=(7) already exists.
+2018-03-27 11:50:28 ERROR  : ERROR:  duplicate key value violates unique constraint "convenis_pkey"
+DETAIL:  Key (id)=(7) already exists.
+2018-03-27 11:50:53 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322211X) is not present in table "tutors".
+2018-03-27 11:50:56 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=() is not present in table "tutors".
+2018-03-27 11:51:48 ERROR  : ERROR:  insert or update on table "convenis" violates foreign key constraint "convenis_dni_responsable_fkey"
+DETAIL:  Key (dni_responsable)=(33322111X) is not present in table "tutors".
+2018-04-09 09:13:30 ERROR  : ERROR:  syntax error at or near "where"
+LINE 1: select * from plats p inner join categories c where id_cat =...
+                                                      ^
+2018-04-09 09:13:39 ERROR  : ERROR:  column c.nom does not exist
+LINE 1: ...ts p inner join categories c on id_cat = c.id and c.nom = 'P...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "p.nom".
+2018-04-16 10:32:44 ERROR  : ERROR:  unterminated quoted identifier at or near "");"
+LINE 1: insert into categories values('Prova')");
+                                              ^
+2018-04-16 10:32:52 ERROR  : ERROR:  invalid input syntax for integer: "Prova"
+LINE 1: insert into categories values('Prova');
+                                      ^
+2018-04-16 11:31:06 ERROR  : ERROR:  duplicate key value violates unique constraint "plats_pkey"
+DETAIL:  Key (id)=(4) already exists.
+2018-04-16 11:34:36 ERROR  : ERROR:  duplicate key value violates unique constraint "plats_pkey"
+DETAIL:  Key (id)=(6) already exists.
+2018-04-16 11:34:48 ERROR  : ERROR:  invalid input syntax for integer: "ProvaCarnic"
+LINE 1: insert into plats values('ProvaCarnic',0,0,0,0,0,32.0,'21323...
+                                 ^
+2018-05-02 08:36:53 ERROR  : ERROR:  permission denied for relation categories
+2018-05-02 08:37:03 ERROR  : ERROR:  permission denied for relation categories
+2018-05-02 08:38:33 ERROR  : ERROR:  permission denied for relation ips
