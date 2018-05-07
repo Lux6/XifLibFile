@@ -13,7 +13,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller {
 
 	@FXML
 	private Button btnIn;
@@ -21,44 +21,38 @@ public class Controller implements Initializable {
 	private Label lblRutaIn;
 	@FXML
 	private TextField tfOut;
+	
 	private FileChooser fileChooser;
 	private File fileIn;
 	private File fileOut;
 
 	/**
-	 * CERCA LA RUTA DEL FITXER D'ENTRADA
+	 * CERCA EL FITXER D'ENTRADA
 	 * 
-	 * @param ae
+	 * @param e
 	 */
 	@FXML
-	public void onClickBtnIn(ActionEvent ae) {
-
+	public void onClickBtnIn(ActionEvent e) {
 		fileIn = fileChooser.showOpenDialog(null);
 		lblRutaIn.setText(fileIn.getPath());
-
 	}
 
 	/**
-	 * XIFA/DESXIFRA EL DOCUMENT ESCOLLIT
+	 * XIFRA/DESXIFRA EL DOCUMENT ESCOLLIT
 	 * 
-	 * @param ae
+	 * @param e
 	 */
 	@FXML
-	public void onClickBtnXif(ActionEvent ae) {
-
+	public void onClickBtnXif(ActionEvent e) {
 		fileOut = new File(tfOut.getText());
 		XifLib xif = new XifLib();
 		xif.xifrar(fileIn, fileOut);
 
 		lblRutaIn.setText("");
 		tfOut.setText("");
-
 	}
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-
+	public void initialize() {
 		fileChooser = new FileChooser();
-
 	}
 }
