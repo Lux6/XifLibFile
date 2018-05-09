@@ -38,7 +38,7 @@ public class Controller {
 	}
 
 	/**
-	 * XIFRA/DESXIFRA EL DOCUMENT ESCOLLIT
+	 * XIFRA / DESXIFRA EL DOCUMENT ESCOLLIT
 	 * 
 	 * @param e
 	 */
